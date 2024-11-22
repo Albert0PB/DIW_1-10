@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Manuel Jesús Ruiz García">
+    <meta name="author" content="Alberto Pérez Bernabeu">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header>
+        <a href="/"><img src="assets/img/logo-header.png" alt="Imagen Blue Loris" width="300"></a>
+        <nav id="nav-bu">
+            <ul>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <button><img src="/assets/icon/search-icon.svg" alt="Search" width=40></button>
+    </header>
+    <main>
+        <dialog id="search-dialog">
+            <form method="dialog" class="exit">
+                <button type="submit"><!--Icono de salir--></button>
+            </form>
+            <input type="text" placeholder="Escriba lo que desee buscar">
+            <button><img src="/assets/icon/search-icon.svg" alt="Search" width=40></button>
+        </dialog>
+        <h1>Contacto</h1>
+        <div>
+            <div>
+                <form action="#" method="post">
+                    <label for="nombre">Nombre*</label>
+                    <input type="text" id="nombre" name="nombre" size="20" required>
+
+                    <label for="apellidos">Apellidos*</label>
+                    <input type="text" name="apellidos" id="apellidos" size="45" required>
+
+                    <label for="email">Correo electrónico*</label>
+                    <input type="email" name="email" id="email" required>
+
+                    <label for="telefono">Número de teléfono</label>
+                    <input type="tel" name="telefono" id="telefono">
+                    
+                    <label for="compania">Compañía*</label>
+                    <input type="text" name="compania" id="compania" required>
+
+                    <label for="cif">CIF*</label>
+                    <input type="text" name="cif" id="cif" required>
+
+                    <label for="direccion">Dirección*</label>
+                    <input type="text" name="direccion" id="direccion" required>
+
+                    <label for="cp">Código postal*</label>
+                    <input type="text" name="cp" id="cp" required>
+
+                    <label for="comentario">Comentarios*</label>
+                    <textarea name="comentario" id="comentario" placeholder="" cols="60"
+                        rows="15" maxlength="1500"></textarea>
+
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2088.7687751190538!2d-58.96720480269738!3d-62.19864733368122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbc73faa2aed99dcf%3A0x9666887756a76746!2sMonumento%20Al%20Tratado%20Antartico!5e0!3m2!1ses!2ses!4v1732283544471!5m2!1ses!2ses"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h4>Dirección</h4>
+                <p>C/Tontorrón 27, 14007 Córdoba</p>
+                <h4>Teléfono</h4>
+                <p>+34 666 666 666</p>
+                <h4>Email</h4>
+                <p>info@blueloris.es</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- Falta la línea vertical entre la section de Info Contacto y De Interés -->
+        <section>
+            <h2>Información de contacto</h2>
+            <pre>
+C/Tontorrón 27, 14007 Córdoba
+Teléfono: +34 666 666 666
+Email: info@blueloris.es
+            </pre>
+        </section>
+        <section>
+            <h2>De interés</h2>
+            <pre>
+Tratamiento de datos
+Política de cookie
+Términos y condiciones
+            </pre>
+        </section>
+        <div>
+            <img src="" alt="bandera-espanna">
+            <p>&copy; BlueLoris 2024</p>
+        </div>
+    </footer>
+</body>
+
+</html>

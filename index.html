@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <img src="assets/img/logo-header.png" alt="Imagen Blue Loris" width="300">
+        <a href="/"><img src="assets/img/logo-header.png" alt="Imagen Blue Loris" width="300"></a>
         <nav id="nav-bu">
             <ul>
                 <li><a href="servicios.html">Servicios</a></li>
@@ -17,11 +17,18 @@
                 <li><a href="contacto.html">Contacto</a></li>                
             </ul>
         </nav>
-        <button><img src="/assets/icon/search-icon.svg" alt=""></button>
+        <button><img src="/assets/icon/search-icon.svg" alt="Search" width=40></button>
     </header>
     <main>
+        <dialog id="search-dialog">
+            <form method="dialog" class="exit">
+                <button type="submit"><!--Icono de salir--></button>
+            </form>
+            <input type="text" placeholder="Escriba lo que desee buscar">
+            <button><img src="/assets/icon/search-icon.svg" alt="Search" width=40></button>
+        </dialog>
         <h1>Sin prisa pero sin pausa</h1>
-        <img src="" alt="banner-home">
+        <img src="/assets/img/banner.jpg" alt="banner-home" width="800">
         <article>
             <h2>Nuestros servicios</h2>
             <section>
