@@ -1,0 +1,27 @@
+main
+{
+    margin-left: 5vw;
+    margin-right: 5vw;;
+}
+
+main > h1
+{
+
+}
+
+main > article
+{
+    background-color: lightsteelblue;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+main > article h2, h3
+{
+    color: blue;
+}
+
+main > article > div
+{
+    display: flex;
+}
