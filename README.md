@@ -3,7 +3,7 @@
 * [ ] El logo ocupa demasiado espacio en la cabecera. 
 * [ ] El eslogan deberíais ponerlo de otro modo que parezca un eslogan y no un título. 
 * [ ] En Quiénes somos pondría la imagen más a la derecha para alinearla con lo de arriba. 
-* [ ] No redondearía las esquinas de la cabecera ni del footer. 
+* [X ] No redondearía las esquinas de la cabecera ni del footer. 
 * [ ] En Contacto es mejor alinear ambas columnas. 
 * [ ] Los textos de la izquierda están muy pegados. Dejaría más margen inzquierdo y derecho en el main. 
 * [ ] "Cuéntanos lo que quiere hacer" está usando dos tonos distintos para dirigiros al usuario. Elegid uno. 
