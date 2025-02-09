@@ -3,15 +3,10 @@ header
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    padding: var(--padding);
     width: 100%;
-    height: 20vh;
-    background-color: lightgray;
-}
-
-header > *
-{
-    height: 20vh;
+    height: 10vh;
+    background-color: var(--neutral-200);
 }
 
 header > nav
@@ -31,7 +26,7 @@ header > nav > ul
 
 header > nav > ul a
 {
-    color: black;
+    color: var(--primary-900);
     font-weight: bold;
     font-size: larger;
     text-decoration: none;
@@ -44,15 +39,9 @@ header > section
     align-items: center;
 }
 
-header > section > a
-{
-    position: absolute;
-    left: 3vw;
-}
-
 header > section > a > img
 {
-    width: 40%;
+    width: 50%;
 }
 
 header > section > button
@@ -62,4 +51,9 @@ header > section > button
     scale: 1.5;
     background-color: transparent;
     border: none;
+}
+
+header .search-button > img
+{
+    width: 20px;
 }

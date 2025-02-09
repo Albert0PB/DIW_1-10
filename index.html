@@ -5,15 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Manuel Jesús Ruiz García">
     <meta name="author" content="Alberto Pérez Bernabeu">
-    <link rel="stylesheet" href="/css/colors.css">
+    <link rel="stylesheet" href="/css/theme.css">
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/header.css">
     <title>Home</title>
 </head>
 <body>
     <header>
         <section>
-            <a href="index.html"><img src="assets/img/logo-header.png" alt="Imagen Blue Loris" width="300"></a>
+            <a href="index.html"><img src="assets/img/logo-header.png" alt="Imagen Blue Loris"></a>
         </section>
         <nav id="nav-bu">
             <ul>
@@ -23,7 +22,7 @@
             </ul>
         </nav>
         <section>
-            <button><img src="assets/icon/search-icon.svg" alt="Search" width=40></button>
+            <button class="search-button"><img src="assets/icon/search-icon.svg" alt="Search"></button>
         </section>
     </header>
     <main>
@@ -32,11 +31,11 @@
                 <button type="submit"><!--Icono de salir--></button>
             </form>
             <input type="text" placeholder="Escriba lo que desee buscar">
-            <button><img src="assets/icon/search-icon.svg" alt="Search" width=40></button>
+            <button><img src="assets/icon/search-icon.svg" alt="Search"></button>
         </dialog>
         <h1>Sin prisa pero sin pausa</h1>
         <img src="assets/img/banner.jpg" alt="banner-home" width="100">
-        <article>
+        <article class="card">
             <h2>Nuestros servicios</h2>
             <div>
 
@@ -67,7 +66,7 @@
             </div>
         </article>
         
-        <article>
+        <article class="card">
                 <h2>Quiénes somos</h2>
                 <p>
                     En BlueLoris buscamos ofrecer a nuestros clientes un servicio que asegure una posición y presencia web que se adapte a la imagen de 
@@ -88,8 +87,8 @@
 		<div class="row pt-4">
 			<div class="col-md-3 col-lg-6 order-md-last">
 				<div class="row justify-content-end">
+                    <span class="spain-flag"></span>
 					<div class="col-md-12 col-lg-9 text-md-right mb-md-0 mb-4">
-						<span class="spain-flag"></span>
 						<div class="class=" copyright"">
 							&copy; BlueLoris
 							<script>document.write(new Date().getFullYear());</script>
@@ -115,6 +114,7 @@
 							<li><span>Email: info@blueloris.es</span></li>
 						</ul>
 					</div>
+                    <div class="footer-separator"></div>
 					<div class="col-md-4 mb-md-0 mb-4">
 						<h2 class="footer-heading">De interés</h2>
 						<ul class="list-unstyled">

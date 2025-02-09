@@ -1,0 +1,64 @@
+footer 
+{
+    background-color: var(--neutral-200);
+    padding: var(--padding);
+}
+footer > div 
+{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+
+footer > div > div > div.row  
+{
+    display: flex;
+    gap: var(--padding);
+    align-items: stretch;
+}
+
+footer > div > div > div.row.justify-content-end
+{
+    align-items: center;
+    gap: calc(var(--padding) / 3);
+}
+
+footer  .footer-heading 
+{
+    font-size: var(--h5-size);
+    color: var(--primary-800);
+}
+
+footer li 
+{
+    list-style: none;
+}
+
+footer .footer-separator 
+{
+    width: 2px;
+    background-color: var(--primary-900);
+}
+
+footer .spain-flag
+{
+    position: relative;
+    display: block;
+    background-color: #AD1519;
+    height: 33px;
+    width: 50px;
+    border-radius: 8px;
+}
+
+footer .spain-flag::after
+{
+    position: absolute;
+    content: "";
+    display: block;
+    height: 11px;
+    top: calc(50% - 5.5px);
+    width: 100%;
+    background-color: #FABD00;
+}
