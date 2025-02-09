@@ -1,3 +1,27 @@
+@font-face 
+{
+    font-family: Panamera;
+    src: url(/assets/fonts/Panamera-Regular.otf);
+}
+
+@font-face 
+{
+    font-family: Panamera;
+    src: url(/assets/fonts/Panamera-Bold.otf);
+    font-weight: bold;
+}
+
+@font-face 
+{
+    font-family: Panamera;
+    src: url(/assets/fonts/Panamera-Light.otf);
+    font-weight: lighter;
+}
+
+* {
+    font-family: Panamera;
+}
+
 main
 {
     margin-left: 5vw;
