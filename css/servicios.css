@@ -1,0 +1,42 @@
+article
+{
+    background-color: var(--neutral-300);
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    border: 1px solid black;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    border-radius: var(--border-radius);
+}
+
+.service > img
+{
+    border-radius: var(--border-radius);
+    width: 30vw;
+}
+
+.service > .service-text
+{
+    width: 30vw;
+}
+
+.service
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+article > a
+{
+    margin-left: 85%;
+    background-color: var(--primary-500);
+    color: white;
+    font-weight: 800;
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    
+
+}
