@@ -104,6 +104,7 @@
 
     /*Spacing*/
     --padding: 40px;
+    --separation: 20px;
 }
 
 * {

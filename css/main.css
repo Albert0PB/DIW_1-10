@@ -21,3 +21,24 @@ main > article > div
 {
     display: flex;
 }
+
+main .services {
+    padding: var(--separation);
+}
+
+main .services section {
+    display: flex;
+    gap: var(--separation);
+}
+
+main .services img
+{
+    
+    width: 220px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+}
+main .banner
+{
+    width: 100%;
+}
