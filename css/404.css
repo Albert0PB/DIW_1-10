@@ -1,0 +1,34 @@
+body 
+{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+main
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main > img
+{
+    height: 40vh;
+    border-right: 1px var(--primary-200) solid;
+    padding-right: 10vw;
+}
+
+.error-text > a
+{
+    background-color: var(--primary-500);
+    color: white;
+    font-weight: bolder;
+    border-radius: var(--border-radius);
+}
+
+.error-text
+{
+    width: 30vw;
+}
+
