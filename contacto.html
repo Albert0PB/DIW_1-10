@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Manuel Jesús Ruiz García">
     <meta name="author" content="Alberto Pérez Bernabeu">
+    <link rel="stylesheet" href="/css/contacto.css">
     <link rel="stylesheet" href="/css/theme.css">
     <title>Contacto</title>
 </head>
@@ -36,7 +37,19 @@
         </dialog>
         <h1>Contacto</h1>
         <div>
-            <div>
+            <div class="location">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2088.7687751190538!2d-58.96720480269738!3d-62.19864733368122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbc73faa2aed99dcf%3A0x9666887756a76746!2sMonumento%20Al%20Tratado%20Antartico!5e0!3m2!1ses!2ses!4v1732283544471!5m2!1ses!2ses"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h4>Dirección</h4>
+                <p>C/Tontorrón 27, 14007 Córdoba</p>
+                <h4>Teléfono</h4>
+                <p>+34 666 666 666</p>
+                <h4>Email</h4>
+                <p>info@blueloris.es</p>
+            </div>
+            <div class="card">
                 <form action="#" method="post">
                     <label for="nombre">Nombre*</label>
                     <input type="text" id="nombre" name="nombre" size="20" required>
@@ -66,20 +79,8 @@
                     <textarea name="comentario" id="comentario" placeholder="" cols="60"
                         rows="15" maxlength="1500"></textarea>
 
-                    <input type="submit" value="Enviar">
+                    <input type="submit" value="Enviar" class="submit">
                 </form>
-            </div>
-            <div>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2088.7687751190538!2d-58.96720480269738!3d-62.19864733368122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbc73faa2aed99dcf%3A0x9666887756a76746!2sMonumento%20Al%20Tratado%20Antartico!5e0!3m2!1ses!2ses!4v1732283544471!5m2!1ses!2ses"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <h4>Dirección</h4>
-                <p>C/Tontorrón 27, 14007 Córdoba</p>
-                <h4>Teléfono</h4>
-                <p>+34 666 666 666</p>
-                <h4>Email</h4>
-                <p>info@blueloris.es</p>
             </div>
         </div>
     </main>

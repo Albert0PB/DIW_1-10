@@ -1,0 +1,45 @@
+main
+{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 5vh;
+}
+
+main > div
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card > form
+{
+    display: flex;
+    flex-direction: column;
+}
+
+iframe
+{
+    margin-bottom: 5vh;
+}
+
+form > .submit
+{
+    border-radius: var(--border-radius);
+    margin-top: 2vh;
+    width: 30%;
+    align-self: flex-end;
+    background-color: var(--primary-500);
+    color: white;
+    font-weight: bolder;
+}
+
+form > input, textarea
+{
+    border-radius: var(--border-radius);
+}
+
+form > label
+{
+    font-weight: bold;
+    margin-top: 1vh;
+}
