@@ -23,18 +23,18 @@
         </nav>
         <section>
             <button class="search-button"><img src="assets/icon/search-icon.svg" alt="Search"></button>
+            <button class="close-search-button search-button-hide"><img src="/assets/icon/exit-icon.svg" alt="Close search"></button>
         </section>
     </header>
     <main>
-        <dialog id="search-dialog">
-            <form method="dialog" class="exit">
-                <button type="submit"><!--Icono de salir--></button>
-            </form>
-            <input type="text" placeholder="Escriba lo que desee buscar">
-            <button><img src="assets/icon/search-icon.svg" alt="Search"></button>
-        </dialog>
+        <div id="search-dialog">
+            <div class="search-input">
+                <input type="text" placeholder="Escriba lo que desee buscar">
+                <button><img src="assets/icon/search-icon.svg" alt="Search"></button>
+            </div>
+        </div>
         <h1>Servicios</h1>
-        <article>
+        <article class="card">
             <h2>Consultoría Web</h2>
             <!-- La imagen y los párrafos puede que deban meterse en el futuro en un div para hacer un flex -->
             <div class="service">
@@ -57,10 +57,10 @@
                     </p>
                 </div>
             </div>
-            <a href="consultoria-web.html">Más información</a>
+            <a href="consultoria-web.html" class="button">Más información</a>
         </article>
         <div class="lower-services">
-            <article>
+            <article class="card">
                 <h2>Servicio de Desarrollo</h2>
                 <p>
                     Además de realizar servicios de consultoría, ofrecemos la posibilidad 
@@ -77,9 +77,9 @@
                     Calidad asegurada junto con una filosofía de entrega continua para 
                     satisfacer sus necesidades.
                 </p>
-                <a href="#">Más información</a>
+                <a href="/404.html" class="button">Más información</a>
             </article>
-            <article>
+            <article class="card">
                 <h2>Consultoría Interna</h2>
                 <p>
                     Nuestro servicio de consultoría también se ocupa de ofrecer apoyo a las 
@@ -94,7 +94,7 @@
                     modernizarlos y asegurar la futura integración de nuevas herramientas a 
                     sus programas informáticos.
                 </p>
-                <a href="#">Más información</a>
+                <a href="/404.html" class="button">Más información</a>
             </article>
         </div>
     </main>
@@ -148,5 +148,6 @@
 			</div>
 		</div>
 	</footer>
+    <script type="module" src="/src/search.js"></script>
 </body>
 </html>

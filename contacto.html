@@ -8,6 +8,7 @@
     <meta name="author" content="Alberto Pérez Bernabeu">
     <link rel="stylesheet" href="/css/contacto.css">
     <link rel="stylesheet" href="/css/theme.css">
+    <link rel="stylesheet" href="/css/contacto.css">
     <title>Contacto</title>
 </head>
 
@@ -20,21 +21,21 @@
             <ul>
                 <li><a href="servicios.html">Servicios</a></li>
                 <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>                
+                <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
         <section>
             <button class="search-button"><img src="assets/icon/search-icon.svg" alt="Search"></button>
+            <button class="close-search-button search-button-hide"><img src="/assets/icon/exit-icon.svg" alt="Close search"></button>
         </section>
     </header>
     <main>
-        <dialog id="search-dialog">
-            <form method="dialog" class="exit">
-                <button type="submit"><!--Icono de salir--></button>
-            </form>
-            <input type="text" placeholder="Escriba lo que desee buscar">
-            <button><img src="assets/icon/search-icon.svg" alt="Search"></button>
-        </dialog>
+        <div id="search-dialog">
+            <div class="search-input">
+                <input type="text" placeholder="Escriba lo que desee buscar">
+                <button><img src="assets/icon/search-icon.svg" alt="Search"></button>
+            </div>
+        </div>
         <h1>Contacto</h1>
         <div>
             <div class="location">
@@ -51,89 +52,106 @@
             </div>
             <div class="card">
                 <form action="#" method="post">
+                <div class="input">
                     <label for="nombre">Nombre*</label>
                     <input type="text" id="nombre" name="nombre" size="20" required>
-
+                </div>
+                <div class="input">
                     <label for="apellidos">Apellidos*</label>
                     <input type="text" name="apellidos" id="apellidos" size="45" required>
+                </div>
 
+                <div class="input">
                     <label for="email">Correo electrónico*</label>
                     <input type="email" name="email" id="email" required>
+                </div>
 
+                <div class="input">
                     <label for="telefono">Número de teléfono</label>
                     <input type="tel" name="telefono" id="telefono">
-                    
+                </div>
+
+                <div class="input">
                     <label for="compania">Compañía*</label>
                     <input type="text" name="compania" id="compania" required>
+                </div>
 
+                <div class="input">
                     <label for="cif">CIF*</label>
                     <input type="text" name="cif" id="cif" required>
+                </div>
 
+                <div class="input">
                     <label for="direccion">Dirección*</label>
                     <input type="text" name="direccion" id="direccion" required>
+                </div>
 
+                <div class="input">
                     <label for="cp">Código postal*</label>
                     <input type="text" name="cp" id="cp" required>
+                </div>
 
+                <div class="input">
                     <label for="comentario">Comentarios*</label>
-                    <textarea name="comentario" id="comentario" placeholder="" cols="60"
-                        rows="15" maxlength="1500"></textarea>
-
-                    <input type="submit" value="Enviar" class="submit">
+                    <textarea name="comentario" id="comentario" placeholder="" cols="60" rows="15"
+                        maxlength="1500"></textarea>
+                </div>
+                    <input type="submit" value="Enviar" class="button">
                 </form>
             </div>
         </div>
     </main>
     <footer class="footer-06">
-		<div class="row pt-4">
-			<div class="col-md-3 col-lg-6 order-md-last">
-				<div class="row justify-content-end">
+        <div class="row pt-4">
+            <div class="col-md-3 col-lg-6 order-md-last">
+                <div class="row justify-content-end">
                     <span class="spain-flag"></span>
-					<div class="col-md-12 col-lg-9 text-md-right mb-md-0 mb-4">
-						<div class="class=" copyright"">
-							&copy; BlueLoris
-							<script>document.write(new Date().getFullYear());</script>
-						</div>
-						<p class="copyright">
-							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-							Copyright &copy;
-							<script>document.write(new Date().getFullYear());</script> All rights reserved | This
-							template is made with <i class="ion-ios-heart" aria-hidden="true"></i> by <a
-								href="https://colorlib.com" target="_blank">Colorlib.com</a>
-							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-9 col-lg-6">
-				<div class="row">
-					<div class="col-md-4 mb-md-0 mb-4">
-						<h2 class="footer-heading">Información de contacto</h2>
-						<ul class="list-unstyled">
-							<li><span>C/ Tontorrón 27, 14007</span></li>
-							<li><span>Teléfono: +34 666 666 666</span></li>
-							<li><span>Email: info@blueloris.es</span></li>
-						</ul>
-					</div>
+                    <div class="col-md-12 col-lg-9 text-md-right mb-md-0 mb-4">
+                        <div class="class=" copyright"">
+                            &copy; BlueLoris
+                            <script>document.write(new Date().getFullYear());</script>
+                        </div>
+                        <p class="copyright">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved | This
+                            template is made with <i class="ion-ios-heart" aria-hidden="true"></i> by <a
+                                href="https://colorlib.com" target="_blank">Colorlib.com</a>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9 col-lg-6">
+                <div class="row">
+                    <div class="col-md-4 mb-md-0 mb-4">
+                        <h2 class="footer-heading">Información de contacto</h2>
+                        <ul class="list-unstyled">
+                            <li><span>C/ Tontorrón 27, 14007</span></li>
+                            <li><span>Teléfono: +34 666 666 666</span></li>
+                            <li><span>Email: info@blueloris.es</span></li>
+                        </ul>
+                    </div>
                     <div class="footer-separator"></div>
-					<div class="col-md-4 mb-md-0 mb-4">
-						<h2 class="footer-heading">De interés</h2>
-						<ul class="list-unstyled">
-							<li><a href="#" class="py-1 d-block"><span
-										class="ion-ios-checkmark-circle-outline mr-2"></span>Tratamiento de datos</a>
-							</li>
-							<li><a href="#" class="py-1 d-block"><span
-										class="ion-ios-checkmark-circle-outline mr-2"></span>Política de cookies</a>
-							</li>
-							<li><a href="#" class="py-1 d-block"><span
-										class="ion-ios-checkmark-circle-outline mr-2"></span>Términos y condiciones</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
+                    <div class="col-md-4 mb-md-0 mb-4">
+                        <h2 class="footer-heading">De interés</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="py-1 d-block"><span
+                                        class="ion-ios-checkmark-circle-outline mr-2"></span>Tratamiento de datos</a>
+                            </li>
+                            <li><a href="#" class="py-1 d-block"><span
+                                        class="ion-ios-checkmark-circle-outline mr-2"></span>Política de cookies</a>
+                            </li>
+                            <li><a href="#" class="py-1 d-block"><span
+                                        class="ion-ios-checkmark-circle-outline mr-2"></span>Términos y condiciones</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="/src/search.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,9 @@
     <meta name="author" content="Alberto Pérez Bernabeu">
     <link rel="stylesheet" href="/css/theme.css">
     <title>Consultoría Web</title>
+    <link rel="stylesheet" href="/css/consultoria-web.css">
 </head>
+
 <body>
     <header>
         <section>
@@ -17,118 +20,145 @@
             <ul>
                 <li><a href="servicios.html">Servicios</a></li>
                 <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>                
+                <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
         <section>
             <button class="search-button"><img src="assets/icon/search-icon.svg" alt="Search"></button>
+            <button class="close-search-button search-button-hide"><img src="/assets/icon/exit-icon.svg"
+                    alt="Close search"></button>
         </section>
     </header>
     <main>
-        <dialog id="search-dialog">
-            <form method="dialog" class="exit">
-                <button type="submit"><!--Icono de salir--></button>
-            </form>
-            <input type="text" placeholder="Escriba lo que desee buscar">
-            <button><img src="assets/icon/search-icon.svg" alt="Search"></button>
-        </dialog>
+        <div id="search-dialog">
+            <div class="search-input">
+                <input type="text" placeholder="Escriba lo que desee buscar">
+                <button><img src="assets/icon/search-icon.svg" alt="Search"></button>
+            </div>
+        </div>
         <h1>Consultoría Web</h1>
-        <article>
-            <h2>Descripción</h2>
-            <p>
-                Nuestro servicio de consultoría web engloba todas las actividades de auditoría y revisión en cuanto al 
-                diseño web, programación de aplicaciones web, branding, posicionamiento e imagen digital. Aportamos 
-                mejoras y soluciones adaptadas a su situación y al plan de acción de su empresa para alcanzar sus metas 
-                y lograr una imagen en internet que aumente su potencial y resulte atrayente a posibles clientes.
-            </p>
-        </article>
-        <!-- Línea vertical -->
-        <article>
-            <h2>Reseñas</h2>
-            <!-- Etiqueta i para añadir icono de flecha al botón. Necesario enlazar source de los iconos más arriba en el HTML. -->
-            <button><i>Anterior</i></button>
-            <section>
-                <img src="assets/img/clients/client-1.png" alt="Img cliente satisfecho" width="128">
-                <h3>Fractura Cuántica</h3>
-                <h4>Divulgador Científico</h4>
+        <div class="reviews-description">
+            <article>
+                <h2>Descripción</h2>
                 <p>
-                    Un servicio del cuál nunca dudaría en volver a contratar, me han solucionado y 
-                    guiado en todo lo que he necesitado... Gracias BlueLoris.
+                    Nuestro servicio de consultoría web engloba todas las actividades de auditoría y revisión en cuanto
+                    al
+                    diseño web, programación de aplicaciones web, branding, posicionamiento e imagen digital. Aportamos
+                    mejoras y soluciones adaptadas a su situación y al plan de acción de su empresa para alcanzar sus
+                    metas
+                    y lograr una imagen en internet que aumente su potencial y resulte atrayente a posibles clientes.
                 </p>
-                <!-- Estrellas o puntuación de satisfacción. -->
-            </section>
-            <button><i>Siguiente</i></button>
-        </article>
-        <hr>
-        <article>
+            </article>
+            <div class="vertical-separator"></div>
+            <article>
+                <h2>Reseñas</h2>
+                <!-- Etiqueta i para añadir icono de flecha al botón. Necesario enlazar source de los iconos más arriba en el HTML. -->
+                <div class="review">
+                    <button class="arrow"><img src="/assets/icon/caret-left.svg" alt="left-arrow"></button>
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="assets/img/clients/client-1.png" alt="Img cliente satisfecho" width="128">
+                            <div class="card-header-info">
+                                <h4>Fractura Cuántica</h4>
+                                <p>Divulgador Científico</p>
+                            </div>
+                        </div>
+                        <p>
+                            Un servicio del cuál nunca dudaría en volver a contratar, me han solucionado y
+                            guiado en todo lo que he necesitado... Gracias BlueLoris.
+                        </p>
+                        <div class="review-stars">
+                            <span class="full"></span>
+                            <span class="full"></span>
+                            <span class="full"></span>
+                            <span class="full"></span>
+                            <span class="half"></span>
+                        </div>
+                    </div>
+                    <button class="arrow"><img src="/assets/icon/caret-right.svg" alt="right-arrow"></button>
+                </div>
+            </article>
+        </div>
+        <br>
+        <article class="card service-form">
             <h2>Formulario de solicitud: Consultoría web</h2>
             <form action="#" method="post">
+                <div class="input">
+                    <label for="nombre">Nombre*</label>
+                    <input type="text" id="nombre" name="nombre" size="20" required>
+                </div>
 
-                <label for="nombre">Nombre*</label>
-                <input type="text" id="nombre" name="nombre" size="20" required>
+                <div class="input">
+                    <label for="apellidos">Apellidos*</label>
+                    <input type="text" name="apellidos" id="apellidos" size="45" required>
+                </div>
 
-                <label for="apellidos">Apellidos*</label>
-                <input type="text" name="apellidos" id="apellidos" size="45" required>
+                <div class="input">
+                    <label for="email">Correo electrónico*</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
 
-                <label for="email">Correo electrónico*</label>
-                <input type="email" name="email" id="email" required>
+                <div class="input">
+                    <label for="comentario">Cuéntenos lo que quiere hacer*</label>
+                    <textarea name="comentario" id="comentario" placeholder="Escriba su comentario..." cols="60"
+                        rows="15" maxlength="1500"></textarea>
+                </div>
 
-                <label for="comentario">Cuéntenos lo que quiere hacer*</label>
-                <textarea name="comentario" id="comentario" placeholder="Escriba su comentario..." cols="60" rows="15" maxlength="1500"></textarea>
-
-                <input type="submit" value="Enviar">
+                <input type="submit" value="Enviar" class="button">
             </form>
         </article>
     </main>
     <footer class="footer-06">
-		<div class="row pt-4">
-			<div class="col-md-3 col-lg-6 order-md-last">
-				<div class="row justify-content-end">
+        <div class="row pt-4">
+            <div class="col-md-3 col-lg-6 order-md-last">
+                <div class="row justify-content-end">
                     <span class="spain-flag"></span>
-					<div class="col-md-12 col-lg-9 text-md-right mb-md-0 mb-4">
-						<div class="class=" copyright"">
-							&copy; BlueLoris
-							<script>document.write(new Date().getFullYear());</script>
-						</div>
-						<p class="copyright">
-							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-							Copyright &copy;
-							<script>document.write(new Date().getFullYear());</script> All rights reserved | This
-							template is made with <i class="ion-ios-heart" aria-hidden="true"></i> by <a
-								href="https://colorlib.com" target="_blank">Colorlib.com</a>
-							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-9 col-lg-6">
-				<div class="row">
-					<div class="col-md-4 mb-md-0 mb-4">
-						<h2 class="footer-heading">Información de contacto</h2>
-						<ul class="list-unstyled">
-							<li><span>C/ Tontorrón 27, 14007</span></li>
-							<li><span>Teléfono: +34 666 666 666</span></li>
-							<li><span>Email: info@blueloris.es</span></li>
-						</ul>
-					</div>
+                    <div class="col-md-12 col-lg-9 text-md-right mb-md-0 mb-4">
+                        <div class="class=" copyright"">
+                            &copy; BlueLoris
+                            <script>document.write(new Date().getFullYear());</script>
+                        </div>
+                        <p class="copyright">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved | This
+                            template is made with <i class="ion-ios-heart" aria-hidden="true"></i> by <a
+                                href="https://colorlib.com" target="_blank">Colorlib.com</a>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9 col-lg-6">
+                <div class="row">
+                    <div class="col-md-4 mb-md-0 mb-4">
+                        <h2 class="footer-heading">Información de contacto</h2>
+                        <ul class="list-unstyled">
+                            <li><span>C/ Tontorrón 27, 14007</span></li>
+                            <li><span>Teléfono: +34 666 666 666</span></li>
+                            <li><span>Email: info@blueloris.es</span></li>
+                        </ul>
+                    </div>
                     <div class="footer-separator"></div>
-					<div class="col-md-4 mb-md-0 mb-4">
-						<h2 class="footer-heading">De interés</h2>
-						<ul class="list-unstyled">
-							<li><a href="#" class="py-1 d-block"><span
-										class="ion-ios-checkmark-circle-outline mr-2"></span>Tratamiento de datos</a>
-							</li>
-							<li><a href="#" class="py-1 d-block"><span
-										class="ion-ios-checkmark-circle-outline mr-2"></span>Política de cookies</a>
-							</li>
-							<li><a href="#" class="py-1 d-block"><span
-										class="ion-ios-checkmark-circle-outline mr-2"></span>Términos y condiciones</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
+                    <div class="col-md-4 mb-md-0 mb-4">
+                        <h2 class="footer-heading">De interés</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="py-1 d-block"><span
+                                        class="ion-ios-checkmark-circle-outline mr-2"></span>Tratamiento de datos</a>
+                            </li>
+                            <li><a href="#" class="py-1 d-block"><span
+                                        class="ion-ios-checkmark-circle-outline mr-2"></span>Política de cookies</a>
+                            </li>
+                            <li><a href="#" class="py-1 d-block"><span
+                                        class="ion-ios-checkmark-circle-outline mr-2"></span>Términos y condiciones</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="/src/search.js"></script>
 </body>
+
 </html>

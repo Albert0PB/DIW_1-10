@@ -21,10 +21,12 @@ main > img
 
 .error-text > a
 {
-    background-color: var(--primary-500);
-    color: white;
-    font-weight: bolder;
-    border-radius: var(--border-radius);
+    text-decoration: none;
+    margin-top: var(--separation);
+}
+
+.error-text h2 {
+    color: var(--neutral-400);
 }
 
 .error-text

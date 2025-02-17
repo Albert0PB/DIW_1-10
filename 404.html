@@ -23,23 +23,23 @@
         </nav>
         <section>
             <button class="search-button"><img src="assets/icon/search-icon.svg" alt="Search"></button>
+            <button class="close-search-button search-button-hide"><img src="/assets/icon/exit-icon.svg" alt="Close search"></button>
         </section>
     </header>
     <main>
-        <dialog id="search-dialog">
-            <form method="dialog" class="exit">
-                <button type="submit"><!--Icono de salir--></button>
-            </form>
-            <input type="text" placeholder="Escriba lo que desee buscar">
-            <button><img src="assets/icon/search-icon.svg" alt="Search"></button>
-        </dialog>
+        <div id="search-dialog">
+            <div class="search-input">
+                <input type="text" placeholder="Escriba lo que desee buscar">
+                <button><img src="assets/icon/search-icon.svg" alt="Search"></button>
+            </div>
+        </div>
         <img src="assets/img/error.png" alt="">
         <!--Barra vertical-->
 		<div class="error-text">
 			<h1>Error</h1>
 			<h2>404</h2>
 			<p>Al parecer no encontramos la página a la que intenta acceder... Lo sentimos mucho</p>
-			<a href="index.html">Volver al inicio</a>
+			<a href="index.html" class="button">Volver al inicio</a>
 		</div>
     </main>
     <footer class="footer-06">
@@ -90,7 +90,12 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div>\
 	</footer>
+    <script type="module" src="/src/search.js"></script>
+    <script type="module" src="/src/search.js"></script>
+    <script type="module" src="/src/search.js"></script>
+    <script type="module" src="/src/search.js"></script>
+    <script type="module" src="/src/search.js"></script>
 </body>
 </html>

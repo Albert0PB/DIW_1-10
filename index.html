@@ -25,16 +25,16 @@
         </nav>
         <section>
             <button class="search-button"><img src="assets/icon/search-icon.svg" alt="Search"></button>
+            <button class="close-search-button search-button-hide"><img src="/assets/icon/exit-icon.svg" alt="Close search"></button>
         </section>
     </header>
     <main>
-        <dialog id="search-dialog">
-            <form method="dialog" class="exit">
-                <button type="submit"><!--Icono de salir--></button>
-            </form>
-            <input type="text" placeholder="Escriba lo que desee buscar">
-            <button><img src="assets/icon/search-icon.svg" alt="Search"></button>
-        </dialog>
+        <div id="search-dialog">
+            <div class="search-input">
+                <input type="text" placeholder="Escriba lo que desee buscar">
+                <button><img src="assets/icon/search-icon.svg" alt="Search"></button>
+            </div>
+        </div>
         <h1>Sin prisa pero sin pausa</h1>
         <video class="card banner" autoplay muted loop>
             <source src="/assets/video/portada.mp4" type="video/mp4">
@@ -148,6 +148,7 @@
             </div>
         </div>
     </footer>
+    <script type="module" src="/src/search.js"></script>
 </body>
 
 </html>

@@ -1,15 +1,24 @@
-main .about-us-content {
+main 
+{
+    padding-right: 0px;
+    padding-bottom: 0px;
+}
+
+main .about-us-content 
+{
     display: flex;
     flex-flow: row nowrap;
 }
 
-.about-us-content .about-info {
+.about-us-content .about-info 
+{
     padding: var(--padding);
     position: relative;
 }
 
 main .about-us-content .about-info .info,
-main .about-us-content .about-images {
+main .about-us-content .about-images 
+{
     display: flex;
     flex-flow: column wrap;
 }
@@ -30,6 +39,10 @@ main .about-us-content .about-info .info
     gap: var(--padding);
     height: 95%;
     justify-content: space-evenly;
+}
+
+.about-info {
+    padding-bottom: 5vh;
 }
 
 .about-info::after {
