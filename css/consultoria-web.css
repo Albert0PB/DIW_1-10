@@ -1,3 +1,7 @@
+:root {
+    --arrow-size: 50px
+}
+
 .reviews-description {
     display: flex;
     flex-flow: row;
@@ -17,6 +21,7 @@
 .review {
     display: flex;
     align-items: center;
+    gap: var(--separation);
 }
 
 .review .card .card-header {
@@ -65,13 +70,23 @@
 .review .arrow {
     border: none;
     background-color: transparent;
-    width: 60px;
-    height: 60px
+    width: var(--arrow-size);
+    height: var(--arrow-size);
+    cursor: pointer;
+    border-radius: var(--border-radius);
 }
 .review .arrow img {
-    width: 60px;
-    height: 60px;
+    width: var(--arrow-size);
+    height: var(--arrow-size);
     filter: var(--primary-600-filter);
+}
+.review .arrow:hover {
+    background-color: var(--primary-600);
+}
+.review .arrow:hover img {
+    width: var(--arrow-size);
+    height: var(--arrow-size);
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(315deg) brightness(102%) contrast(102%);
 }
 
 .service-form form {
