@@ -274,10 +274,12 @@ main {
     border: none;
     background-color: transparent;
     cursor: pointer;
+    transition: filter var(--transition-default-time) var(--transition-function);
 }
 .close-search-button img {
     display: block;
     width: 30px;
+    transition: filter var(--transition-default-time) var(--transition-function);
 }
 
 .close-search-button:hover img {
@@ -299,6 +301,10 @@ button.search-button-hide {
     display: flex;
 }
 
+.search-button img{
+    transition: filter var(--transition-default-time) var(--transition-function);
+}
+
 .search-button:hover img {
     filter: var(--primary-600-filter);
 }
@@ -311,6 +317,8 @@ button.search-button-hide {
     cursor: pointer;
     border-top-left-radius: var(--input-radius);
     border-top-right-radius: var(--input-radius);
+    transition-property: background-color, filter;
+    transition: var(--transition-default-time) var(--transition-function);
 }
 
 #search-dialog .search-input button img {
