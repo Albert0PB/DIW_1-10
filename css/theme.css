@@ -105,6 +105,10 @@
     --padding: 40px;
     --input-padding: 10px;
     --separation: 20px;
+
+    --transition-default-time: 0.1s;
+    --transition-function: ease-out;
+    
 }
 
 body {
@@ -235,6 +239,7 @@ form .input {
     border-radius: var(--border-radius);
     color: #fff;
     cursor: pointer;
+    transition: background-color var(--transition-default-time) var(--transition-function);
 }
 
 .button:hover {

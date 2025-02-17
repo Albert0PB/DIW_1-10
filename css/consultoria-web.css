@@ -74,6 +74,8 @@
     height: var(--arrow-size);
     cursor: pointer;
     border-radius: var(--border-radius);
+    transition: var(--transition-default-time) var(--transition-function);
+    transition-property: background-color filter;
 }
 .review .arrow img {
     width: var(--arrow-size);
